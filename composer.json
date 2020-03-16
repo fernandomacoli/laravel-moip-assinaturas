@@ -1,5 +1,5 @@
 {
-    "name": "endsalone/laravel-moip-recorrente",
+    "name": "fernandomacoli/laravel-moip-recorrente",
     "description": "Laravel Moip Recorrente",
     "type": "library",
     "minimum-stability": "dev",
@@ -13,8 +13,8 @@
     "license": "MIT",
 
     "authors": [{
-        "name": "Ernandes Guedes",
-        "email": "jocker.soad@gmail.com"
+        "name": "Fernando Macoli",
+        "email": "fernandomacoli@gmail.com"
     }],
 
     "autoload": {
