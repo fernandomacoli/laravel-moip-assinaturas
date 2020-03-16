@@ -13,7 +13,7 @@ Pacote de integração do MOIP ASSINATURAS v1.5 com Laravel.
 
 ## Instale via composer
     
-    composer require endsalone/laravel-moip-recorrente
+    composer require fernandomacoli/laravel-moip-assinaturas
     
 ## Retorno padrão do pacote
 
