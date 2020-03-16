@@ -15,6 +15,40 @@ Pacote de integração do MOIP ASSINATURAS v1.5 com Laravel.
     
     composer require fernandomacoli/laravel-moip-assinaturas
     
+## Configuração
+
+    ## Adicione um Provider dentro de config/app.php
+
+    /*
+    * Moip
+    */
+
+    Moip\Recorrente\RecorrenteServiceProvider::class,
+
+    # Adicione um Aliases dentro de config/app.php
+
+    /*
+    * Moip
+    */
+
+    'MoipRecorrente' => Moip\Recorrente\RecorrenteFacade::class,
+
+    # No terminal na pasta raiz de seu projeto use o comando
+
+    php artisan vendor:publish 
+
+
+    Com seu pacote devidamente instalado, acesse a pasta config/moiprecorrente.php e insira os dados de seu Token e Chave:
+
+    return [
+      'token' => 'SEUTOKEN',
+      'chave' => 'SUACHAVE',
+      'test' => true,
+      
+      'sandbox' => 'https://sandbox.moip.com.br',
+      'production' => 'https://moip.com.br'
+    ];   
+        
 ## Retorno padrão do pacote
 
 > O pacote sempre retorna um json como no exemplo abaixo:
