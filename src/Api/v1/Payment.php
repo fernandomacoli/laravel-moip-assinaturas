@@ -1,6 +1,6 @@
 <?php
 
-namespace Moip\Recorrente\Api;
+namespace Moip\Recorrente\Api\v1;
 
 use Moip\Recorrente\Http\Request;
 

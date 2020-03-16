@@ -1,4 +1,6 @@
 
+criado a partir do pacote https://github.com/endsalone/laravel-moip-recorrente
+
 # Laravel - Pagamento Recorrente com MOIP
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

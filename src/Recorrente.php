@@ -2,13 +2,14 @@
 namespace Moip\Recorrente;
 
 use Illuminate\Support\Facades\Config;
-use Moip\Recorrente\Api\Coupon;
-use Moip\Recorrente\Api\Invoice;
-use Moip\Recorrente\Api\Payment;
-use Moip\Recorrente\Api\Plan;
-use Moip\Recorrente\Api\Retry;
-use Moip\Recorrente\Api\Subscription;
-use Moip\Recorrente\Api\Subscriber;
+use Moip\Recorrente\Api\v1\Coupon;
+use Moip\Recorrente\Api\v1\Invoice;
+use Moip\Recorrente\Api\v1\Payment;
+use Moip\Recorrente\Api\v1\Plan;
+use Moip\Recorrente\Api\v1\Retry;
+use Moip\Recorrente\Api\v1\Subscription;
+use Moip\Recorrente\Api\v1\Subscriber;
+use Moip\Recorrente\Api\v2\Subscriber as Customer; // Usa o subscriber na V2 do Moip
 
 
 class Recorrente
@@ -44,6 +45,14 @@ class Recorrente
     public function Subscriber()
     {
         return new Subscriber($this->env);
+    }
+
+    /**
+     * @return Customer
+     */
+    public function Customer()
+    {
+        return new Customer($this->env);
     }
 
     /**

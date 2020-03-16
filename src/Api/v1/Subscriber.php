@@ -1,6 +1,6 @@
 <?php
 
-namespace Moip\Recorrente\Api;
+namespace Moip\Recorrente\Api\v1;
 
 use Moip\Recorrente\Http\Request;
 
@@ -18,7 +18,6 @@ class Subscriber extends Request
      */
     public function all()
     {
-        //return $this->get($this->env.'/assinaturas/v1/customers');
         return $this->get($this->env.'/assinaturas/v1/customers');
     }
 
